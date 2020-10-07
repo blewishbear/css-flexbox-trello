@@ -61,6 +61,42 @@
   font-weight: normal;
 }
 
+.tabbed-nav__group {
+  border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+}
+
+.tabbed-nav__link {
+  background-color: white;
+  border: 1 px solid #dfe1e6;
+  border-bottom: 0;
+  border-radius: 2px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0 5px;
+  color: #172b4d;
+}
+
+@media screen and (max-width: 500px){
+.tabbed-nav__group {
+  display: block;
+}
+.tabbed-nav__link {
+  display: block;
+}
+}
+
+.board__container {
+  margin: auto;
+  padding: 32px;
+  max-width: 1400px;
+  display: flex;
+  justify-content: flew-end;
+  flex-wrap: wrap
+}
+
 
 
 
