@@ -1,12 +1,12 @@
 /* Write your CSS here. */
 
 
-/* body{
+body{
   font-family: 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   margin: 0px;
 
-} */
+}
 
 .header-nav__container{
   background-color: #026AA7;
@@ -109,6 +109,8 @@
 
 .boards__container > .boards__sidebar{
  flex-basis: 220px;
+ flex-grow: 1;
+ flex-shrink: 1;
 }
 
 
@@ -122,11 +124,12 @@
 
 .boards__group{
   display: flex;
-  flex:wrap;
+  flex-wrap:wrap;
   width: 80%;
 }
 
 .boards__board{
+  display: flex;
   background-color: black;
   border-radius: 3px;
   box-sizing: border-box;
@@ -138,34 +141,73 @@
   position: relative;
   color: white;
   width: 25%;
-  display: flex;
-  /* align-items: space-between; */
+}
+@media screen and (min-width: 750px) and (max-width: 1280px) {
+  .boards__board {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .boards__board {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 .boards__board.board-1{
   background-image: url("board-backgrounds/board-1-background.jpg");
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 
 .boards__board.board-2{
   background-image: url("board-backgrounds/board-2-background.jpg");
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .boards__board.board-3{
   background-image: url("board-backgrounds/board-3-background.jpg");
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .boards__board.board-4{
   background-image: url("board-backgrounds/board-4-background.jpg");
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .boards__board.board-5{
   background-image: url("board-backgrounds/board-5-background.jpg");
   background-size: contain;
+  background-repeat: no-repeat;
+}
+.boards__board.board-6{
+  background-image: url("board-backgrounds/board-6-background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.boards__board.board-7{
+  background-image: url("board-backgrounds/board-7-background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.boards__board.board-8{
+  background-image: url("board-backgrounds/board-8-background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.boards__board.board-9{
+  background-image: url("board-backgrounds/board-9-background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.boards__board.board-10{
+  background-image: url("board-backgrounds/board-10-background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 
